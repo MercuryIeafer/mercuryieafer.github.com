@@ -1,0 +1,222 @@
+.ui-box{
+	background: #99BD90;
+	display: flex;
+	flex-direction: column;
+}
+.ui-one{
+	box-sizing: border-box;
+	width: 800px;
+	height: 600px;
+	display:flex;
+	background: #CDD3F5;
+	top:150px;
+	flex-direction: column;
+	border-width: 1px;
+	border-style: solid;
+	margin:auto;
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+.ui-head{
+	box-sizing: border-box;
+	width: 760px;
+	height: 120px;
+	margin:20px;
+	background: #99BD90;
+	display: flex;
+	border-width: 1px;
+	border-style: solid;
+}
+.ui-head-cell{
+	box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	margin:20px;
+	background: #CDD3F5;
+	border-width: 1px;
+	border-style: solid;
+}
+.ui-head-helper{
+	background: transparent;
+	flex-grow: 1;
+}
+.ui-content{
+	box-sizing: border-box;
+	width: 760px;
+	height: 420px;
+	margin-left:20px;
+	background: #99BD90;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	border-width: 1px;
+	border-style: solid;
+}
+.ui-content-left{
+	width: 200px;
+	height: 370px;
+	margin:20px;
+	background:#99BD90;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.ui-content-left-main{
+	box-sizing: border-box;
+	width:200px;
+	height:300px;
+	background: #CDD3F5;
+	border-width: 1px;
+	border-style: solid;
+}
+.ui-content-right{
+	width:480px;
+	height:360px;
+	background: #99BD90;
+	margin-top:20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.ui-content-list{
+	box-sizing: border-box;
+	width:480px;
+	height: 40px;
+	margin-left:20px;
+	margin-right: 20px;
+	background: #CDD3F5;
+	border-width: 1px;
+	border-style: solid;
+}
+.ui-content-leftdown{
+	box-sizing: border-box;
+	width: 50px;
+	height:50px;
+	background: #CDD3F5;
+	border-width: 1px;
+	border-style: solid;
+}
+.ui-two{
+	box-sizing: border-box;
+	width: 390px;
+	height: 370px;
+	background: #FFFFEB;
+	/*border-width: 1px;
+	border-style: solid;*/
+	display: flex;
+	flex-direction: column;
+	margin:auto;
+	/*margin-top:100px;*/
+}
+.pic{
+	box-sizing: border-box;
+	width:390px;
+	height: 260px;
+
+	border-width: 1px;
+	border-style: solid;
+	border-right-color: #698163;
+	border-right-width: 2px;
+	display:flex;
+}
+.tit{
+	box-sizing: border-box;
+	width:390px;
+	height:110px;
+	background: #FFE6F4;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-right-color:#698163;
+	border-bottom-color:#698163;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+.ui-tit-word{
+	box-sizing: border-box;
+	width: 370px;
+	height: 20px;
+	background: #FFFFFF;
+	border-width: 1px;
+	border-style:solid;
+	margin:auto;		
+	margin-top: 10px;
+	font-size: 12px;
+	text-indent: 1em;
+	font-style: "微软雅黑";
+	line-height: 17px;
+	font-weight: bold;
+	letter-spacing: -0.1em;
+}
+.ui-tit-inf{
+	box-sizing: border-box;
+	width: 370px;
+	height: 20px;
+	background: #FFFFFF;
+	border-width: 1px;
+	border-style:solid;
+	border-color: #000;
+	margin:auto;
+	margin-top: 10px;
+	text-indent: 1em;
+	font-size: 12px;
+	font-style: "微软雅黑" ;
+	line-height: 17px;
+	color:#F6063E;
+	font-weight: bold;
+	letter-spacing: -0.1em;
+}
+.ui-tit-price{
+	box-sizing: border-box;
+	width: 370px;
+	height: 30px;
+	background: #FFFFFF;
+	border-width: 1px;
+	border-style:solid;
+	border-color: #000;
+	margin:auto;
+	margin-top: 10px;
+	text-indent: 0.5em;
+	font-style: "微软雅黑" ;
+	font-weight: bold;
+	display: flex;
+}
+.ui-tit-price-sign{
+	line-height: 30px;
+	text-indent: 1em;
+	font-size:12px;
+	color:#F6063E;
+}
+.ui-tit-price-nprice{
+	line-height:28px;
+	font-size:22px;
+	color:#F6063E;
+	letter-spacing: -0.1em;
+}
+.ui-tit-price-old{
+	line-height:40px;
+	font-size:11px;
+	color:#878787;
+	letter-spacing: -0.1em;
+}
+.ui-tit-price-sales{
+	line-height: 40px;
+	font-size: 11px;
+	color:#878787;
+	letter-spacing: -0.1em;
+	text-indent: 11em;
+}
+.ui-three{
+	width: 1212px;
+	height:770px;
+	background: #F2F2F2;
+	justify-content: space-between;
+	padding:10px;
+	display: flex;
+	flex-wrap:wrap;
+	align-content: space-between;
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
