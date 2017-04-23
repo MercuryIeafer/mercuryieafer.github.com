@@ -2,14 +2,494 @@
 	width:685px;
 	box-sizing: border-box;
 	display: flex;
+	margin:auto;
+	flex-direction: column;
 }
 .ui-head{
 	width:685px;
-	height:22px;
-	box-sizing: border-box;
+	height:25px;
+	box-sizing: border-box; 
+	display: flex;
 }
 .ui-head-main{
     width:80px;
-    height:22px;
+    height:25px;
     box-sizing: border-box;
+    background: -webkit-linear-gradient(#2F94CD, #1B88C4); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#2F94CD, #1B88C4); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#2F94CD, #1B88C4); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#2F94CD, #1B88C4); /* 标准的语法（必须放在最后） */
+    border-radius: 3px 3px 0px 0px;
+    text-align: center;
+    color:#eee;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.ui-head-attach{
+    width:20px;
+    height:20px;
+    box-sizing: border-box;
+    background: -webkit-linear-gradient(#FC7D18, #FF4002); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FC7D18, #FF4002); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FC7D18, #FF4002); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FC7D18, #FF4002); /* 标准的语法（必须放在最后） */
+    border-radius:3px;	
+    text-align: center;
+    color:#eee;
+    line-height: 20px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+.ui-message{
+	width:687px;
+	height:55px;
+	border:1px solid #CBCBCB;
+	border-top:5px solid #1B88C4;	
+	background: -webkit-linear-gradient(#eee, #F2F3F3); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#eee, #F2F3F3); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top,#eee, #F2F3F3); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#eee, #F2F3F3); /* 标准的语法（必须放在最后） */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ui-message-firstline{
+    width:687px;
+    margin-left: 8px;
+    display: flex;
+}
+.ui-mes-fl-time{
+	color:rgb(215,0,0);
+	font-size:14px;
+	width:55px;
+	margin-right: 5px;
+}
+.ui-mes-fl-time.e{
+	margin-left: 5px;
+}
+.to{
+	color:rgb(215,0,0);
+}
+.ui-mes-fl-price{
+	margin-left: 13px;
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: -1px;
+	color:#444444;
+}
+.ui-mes-fl-num{
+	margin-left: 10px;
+	color:rgb(215,0,0);
+	font-size:14px;
+	letter-spacing: -1px;
+}
+.ui-message-secondline{
+	width:687px;
+    margin-left: -5px;
+    display: flex;
+}
+.ui-mes-sl-sumtime{
+	margin-left: 13px;
+	font-size: 14px;
+	font-weight: 200;
+	color:#444444;
+}
+.ui-mes-sl-hour{
+	margin-left: 7px;
+	color:rgb(215,0,0);
+	font-size:14px;
+	line-height: 23px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+.ui-mes-sl-ride{
+    margin-left: 25px;
+    font-size: 13px;
+    font-weight: 200px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    color:#444444;
+}
+.ui-mes-sl-min{
+    margin-left: 5px;
+    font-size:14px;
+    line-height: 23px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.ui-mes-sl-transfer{
+    margin-left: 25px;
+    color:#444444;
+    font-size:14px;
+    line-height: 23px;
+}
+.ui-mes-sl-tranum{
+    margin-left: 5px;
+    color:rgb(215,0,0);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -4px;
+    line-height: 23px;
+}
+.ui-mes-sl-dis{
+    margin-left: 25px;
+    color:#444444;
+    font-size:15px;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+.ui-mes-sl-disnum{
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.ui-link{
+	width: 687px;
+	height:25px;
+	background: #FFFBDE;
+	border:1px solid #CBCBCB;
+	border-top:none;
+	display:flex;
+	flex-direction: row-reverse;
+}
+.ui-link-icon-print{
+    width:18px;
+    height:16px;
+    margin-top: 5px;
+    margin-right:-5px;
+}
+.ui-link-a{
+    line-height: 28px;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.ui-link-icon-more{
+    font-size:13px;
+    width:13px;
+    height:15px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right:-5px;
+}
+.ui-link-more{
+
+}
+.ui-route{
+	width: 687px;
+	height:212px;
+	box-sizing: border-box;
+	margin-top:5px;
+	display: flex;
+	flex-direction: column;
+}
+.ui-route-property{
+	width:689px;
+	height: 18px;
+	background: #CEDCE8; 
+	display: flex;
+}
+.ui-route-property-place{
+	width:405px;
+	height:18px;
+	text-align: center;
+	color:#607A90;
+	font-size: 14px;
+}
+.ui-route-property-position{
+	width: 66px;
+	height:18px;
+	text-align: center;
+	color:#607A90;
+	font-size: 14px;
+	border-left: 1px solid #eee;
+}
+.ui-route-property-cost{
+	width: 71px;
+    height:18px;
+    text-align: center;
+    color:#607A90;
+    font-size: 14px;
+    border-left: 1px solid #eee;
+}
+.ui-route-property-seat{
+	width:81px;
+	height:18px;
+	text-align: center;
+	color:#607A90;
+	font-size: 14px;
+    border-left: 1px solid #eee;
+}
+.ui-route-property-dis{
+	width: 66px;
+	height:18px;
+	text-align: center;
+	color:#607A90;
+	font-size: 14px;
+    border-left: 1px solid #eee;
+    line-height: 20px;
+}
+.ui-route-site-1{
+	width:690px;
+	height:45px;
+	background: #F2F2F2;
+	margin-top:1px;
+	border:1px solid #CBCBCB;
+	border-top:none;
+	display:flex;
+	box-sizing: border-box;
+}
+.ui-route-site-cloud{
+	width:18px;
+	height: 15px;
+	margin-left: 65px;
+	/*align-content: center;*/
+}
+.ui-route-site-cloud .big {
+	font-size: 15px;
+	color: #98D4F2;
+}
+.ui-route-site-cloud .small {
+	font-size: 11px;
+	color: #fff;
+}
+.ui-route-site-block{
+	width:14px;
+	height:14px;
+	margin-left:15px;
+	margin-top: 15px;
+}
+.block-top{
+	height:8px;
+	background:-moz-linear-gradient(top,#4AB9E6,#0D7DD0);
+	background:-webkit-gradient(#4AB9E6,#0D7DD0);/*谷歌*/ 
+}
+.block-bottom{
+	height:5px;
+	background:-moz-linear-gradient(top,#0D7DD0,#26A0D9);
+	background:-webkit-gradient(#0D7DD0,#26A0D9);/*谷歌*/ 
+}
+.ui-route-site-name{
+	width:60px;
+	height:19px;
+	line-height:43px;
+	font-size:18px;
+	font-family: '微软雅黑';
+	margin-left: 5px;
+}
+.ui-route-site-num{
+	margin-left:228px;
+	width:66px;
+	text-align: center;
+	font-size:13px;
+	font-weight: 200;
+	line-height: 40px;
+	margin-right: 50px;
+}
+a{
+	width:37px;
+	height:14px;
+	font-size: 12px;
+	line-height:45px;
+	margin-left: 6px;
+}
+.ui-route-road-1{
+    width:690px;
+    height:38px;
+    display:flex;
+}
+.ui-route-road-time{
+	width:102px;
+	height:38px;
+	display: flex;
+	flex-direction:column;
+}
+.time-clock{
+	width:102px;
+	height:19px;
+	text-align: center;
+	font-size: 11px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.time-min{
+	width:102px;
+	height:19px;
+	text-align: center;
+	font-size: 12px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+.ui-route-road-1-bar{
+	width:8px;
+	height:100%;
+	background: #96C7D8;
+	display: flex;
+	flex-direction: column;
+}
+.bar-blank{
+	width:3px;
+	height:10px;
+	margin:auto;
+	margin-top: 7px;
+	background: #eee;
+}
+.bar-half{
+    width:3px;
+    height: 5px;
+    margin:auto;
+    margin-top:7px;
+    background: #eee;
+}
+.ui-route-road-car{
+	color:#007CCE;
+	width:16px;
+	height:19px;
+	margin-top:12px;
+	margin-left: 10px;
+}
+.ui-route-road-word{
+	display: inline-block;
+    font-size: 15px;
+    font-family: '微软雅黑';
+    color:#70C3FC;
+    line-height: 40px;
+    font-weight: bold;
+}
+.ui-route-road-detail{
+	width: 145px;
+	height:15px;
+	font-size: 14px;
+	letter-spacing: -1px;
+	color:#0069A3;
+	line-height: 40px;
+}
+.ui-route-road-blank{
+	width:66px;
+	height:38px;
+	box-sizing: border-box;
+	border:1px solid #CBCBCB;
+	border-top:none;
+	border-bottom: none;
+	margin-left: 100px;
+}
+.ui-route-road-cost{
+	width:69px;
+	height:38px;
+	border-right:1px solid #CBCBCB;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+.ui-route-road-seat{
+	width: 80px;
+	height:38px;
+	border-right:1px solid #CBCBCB;
+	text-align: center;
+}
+.aseat{
+	width: 80px;
+	height:19px;
+	font-size: 13px;
+	line-height: 23px;
+}
+.aseat.num{
+	letter-spacing: -1px;
+	margin-top: -5px;
+}
+.ui-route-road-disnum{
+	width:60px;
+	font-size: 11px;
+    margin-left: 10px;
+    line-height: 35px;
+}
+.ui-route-site-2{
+	width:690px;
+	height:45px;
+	background: #F2F2F2;
+	border:1px solid #CBCBCB;
+	display:flex;
+	box-sizing: border-box;
+}
+.time-min.s2{
+	margin-top:15px;
+	line-height:10px;
+}
+.block-top.s2{
+	margin-left: -17px;
+	width:12px;
+	height:6px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+.block-bottom.s2{
+	margin-left: -17px;
+	width:12px;
+	height:6px;
+}
+.block-blank{
+	margin:auto;
+    width:8px;
+    height:4px;
+    background: #fff;
+}
+.block-blank.b{
+	margin-top: -1px;
+}
+.ui-route-site-name.s2{
+	margin-left: -12px;
+	line-height: 35px;
+}
+.num-half{
+	width:60px;
+	height: 22px;
+	margin-top: -8px;
+	margin-right: -3px;
+}
+.ui-route-site-num.s2{
+	margin-right: 40px;
+}
+.num-half.b{
+	margin-top: -9px;
+}
+.ui-route-road-2{
+	width:690px;
+    height:38px;
+    display:flex;
+}
+.ui-route-road-car.r2{
+	color:#028D5E;
+}
+.ui-route-road-word.r2{
+	color:#79C7AD;
+	font-size:13px;
+	letter-spacing: -1px;
+}
+.ui-route-road-detail-r2{
+	width: 150px;
+	height:15px;
+	font-size: 14px;
+	letter-spacing: -1px;
+	color:#0069A3;
+	line-height: 40px;
+	margin-left: 8px;
+	margin-right:-7px;
+}
+.ui-route-site-3{
+	width:690px;
+	height:45px;
+	background: #F2F2F2;
+	border:1px solid #CBCBCB;
+	display:flex;
+	box-sizing: border-box;
+}
+.ui-route-site-num.s3{
+	margin-right: 88px;
 }
