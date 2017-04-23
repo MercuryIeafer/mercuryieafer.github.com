@@ -29,5 +29,34 @@ $(choice)
 function choice(){
 	$(slide)
 }
+//TASK THREE
+$(_delete)
+function _delete(){
+	$(deletediv)
+}
+$(bar_add)
+function bar_add(){
+	$(_add)
+}
+function deletediv(e){
+	$(".delete").click(function(e){
+        $(this).parent().remove();
+        $(".number").text(newindex);
+    });
+}
+function newindex(n){
+    return n+1;
+}
+function _add(){
+	$(".ui-base-add").click(function() {
+        var newitem="<div id='ui-base-tuple' class='ui-base-bar'><div class='number'>1</div><input type='text' class='words'></input><div class='delete'>Delete</div></div>";
+        $(".ui-base-main").append(newitem);
+        $(".number").text(newindex);
+        $(deletediv)
+    });
+}
+
+
+
 
 

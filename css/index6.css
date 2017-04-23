@@ -81,7 +81,7 @@
 /*TASK THREE*/
 .ui-base{
 	width:285px;
-	height:190px;
+	min-height:190px;
 	box-sizing: border-box;
 	display: flex;
 	margin:auto;
@@ -91,20 +91,55 @@
 	padding-top:20px;
 	padding-bottom: 10px;
 	flex-wrap: wrap;
+    justify-content: center;
+}
+.ui-base-main{
+    width: 285px;
+    min-height:133px;
+    border-bottom:none ;
+    justify-content: center;
 }
 .ui-base-bar{
     width:267px;
-    height:27px;
+    height:25px;
     box-sizing: border-box;
     border:1px solid #000;
     display: flex;
-    justify-content: center;
+    margin-bottom: 5px;
 }
 .number{
 	width: 25px;
-	height:25px;
+	height:24px;
 	text-align: center;
-	border-left:1px solid #000;
+	border-right:1px solid #000;
 	box-sizing: border-box;
+	line-height: 25px;
+	font-size:13px;
+}
+.words{
+	width:185px;
+	height: 17px;
+	border:none;
+}
+.delete{
+	width:50px;
+	height:24px;
+	border-left: 1px solid #000;
+	font-size:13px;
+	text-align: center;
+	line-height: 23px;
+	cursor:default;
+}
+.ui-base-add{
+    width:92px;
+    height:27px;
+    box-sizing: border-box;
+    border:1px solid #000;
+    background: #339966;
+    margin-left: 180px;
+    text-align: center;
+    line-height: 25px;
+    color:#eee;
+    cursor:default;
 }
 
